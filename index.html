@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towers of Hanoi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Towers of Hanoi</h1>
+        <div class="input-section">
+            <label for="numDisks">Enter Number of Disks: </label>
+            <input type="number" id="numDisks" min="1" max="10" value="3">
+            <button onclick="startGame()">Start</button>
+        </div>
+        <div class="towers">
+            <div id="tower1" class="tower"></div>
+            <div id="tower2" class="tower"></div>
+            <div id="tower3" class="tower"></div>
+        </div>
+        <div class="controls">
+            <button onclick="nextStep()">Next Step</button>
+        </div>
+        <div class="result">
+            <p id="stepsInfo">Total Steps: 0</p>
+            <p id="completedMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
